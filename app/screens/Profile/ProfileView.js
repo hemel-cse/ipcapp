@@ -16,8 +16,6 @@ class ProfileView extends Component {
                 </Text>
                 <View style={{margin: 7}}/>
                 <View style={{margin: 7}}/>
-                <Button onPress={(e) => this.userSignup(e)} title="SignUp"/>
-                <View style={{margin: 7}}/>
                 <Text style={{fontSize: 16, textAlign: 'center'}}>
                     profileview
                 </Text>

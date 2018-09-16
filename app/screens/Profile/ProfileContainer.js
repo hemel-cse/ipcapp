@@ -8,9 +8,10 @@ class ProfileContainer extends Component {
     }
 
 
-
     render() {
-        return <ProfileView {...this.props} />;
+        return (
+            <ProfileView {...this.props} />
+         );
     }
 }
 

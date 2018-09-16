@@ -28,9 +28,14 @@ class LoginContainer extends Component {
       e.preventDefault();
     }
 
-
+    componentDidMount(){
+        if (this.state.isLoggedIn) {
+            this.props.navigation.navigate('Profile')
+        }
+    }
 
     render() {
+
         if (!this.state.loginpage) {
             return <SignupView {...this.props} {...this.state} login={this.handleLoginSignup} />;
         } else {

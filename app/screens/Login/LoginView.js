@@ -18,6 +18,7 @@ class LoginView extends Component {
     }
 
 
+
     render() {
         return (
             <ScrollView style={{padding: 20}}>

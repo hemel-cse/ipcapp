@@ -25,7 +25,7 @@ class SignupView extends Component {
         return (
             <ScrollView style={{padding: 20}}>
                 <Text style={{fontSize: 27, textAlign: 'center'}}>
-                    SIGNUP
+                    Signup
                 </Text>
                 <View style={{margin: 7}}/>
                 <TextInput 

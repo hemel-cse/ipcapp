@@ -41,13 +41,7 @@ export function requestSignup(username, password) {
     return {
         type: types.SIGNUP_REQUEST,
         username,
-        password,
-        email,
-        profileType,
-        picture,
-        photoId,
-        address,
-        country
+        password
     };
 }
 
