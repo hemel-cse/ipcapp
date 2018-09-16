@@ -10,17 +10,31 @@ class LoginContainer extends Component {
         super(props);
 
         this.state = {
-            login: false,
+            loginpage: true,
+            username: '',
+            password: '',
+            email: '',
+            profileType: '',
+            typeSelect: false,
         };
+
+
+    }
+
+    handleLoginSignup = (e) => {
+      this.setState(state => ({
+        loginpage: !state.loginpage
+      }));
+      e.preventDefault();
     }
 
 
 
     render() {
-        if (!this.props.isLoggedIn) {
-            return <SignupView {...this.props} />;
+        if (!this.state.loginpage) {
+            return <SignupView {...this.props} {...this.state} login={this.handleLoginSignup} />;
         } else {
-            return <LoginView {...this.props} />;
+            return <LoginView {...this.props} {...this.state} signup={this.handleLoginSignup} />;
         }
     }
 }

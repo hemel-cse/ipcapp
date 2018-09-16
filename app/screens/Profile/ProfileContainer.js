@@ -5,10 +5,6 @@ import { connect } from 'react-redux';
 class ProfileContainer extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            login: true,
-        };
     }
 
 

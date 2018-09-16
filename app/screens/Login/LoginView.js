@@ -8,15 +8,14 @@ class LoginView extends Component {
 
         this.state = {
             username: '',
-            password: ''
+            password: '',
         };
     }
 
-    userLogin (e) {
+    handleuserLogin = (e) => {
         this.props.onLogin(this.state.username, this.state.password);
         e.preventDefault();
     }
-
 
 
     render() {
@@ -26,7 +25,8 @@ class LoginView extends Component {
                     Login
                 </Text>
                 <View style={{margin: 7}}/>
-                <TextInput 
+                <TextInput
+                    style={{height: 40, backgroundColor: '#f4f4f4', borderRadius: 5, marginBottom: 7}} 
                     placeholder='Username' 
                     autoCapitalize='none' 
                     autoCorrect={false} 
@@ -35,6 +35,7 @@ class LoginView extends Component {
                     value={this.props.username} 
                     onChangeText={(text) => this.setState({ username: text })} />
                 <TextInput 
+                    style={{height: 40, backgroundColor: '#f4f4f4', borderRadius: 5, marginBottom: 7}}
                     placeholder='Password' 
                     autoCapitalize='none' 
                     autoCorrect={false} 
@@ -42,7 +43,15 @@ class LoginView extends Component {
                     value={this.state.password} 
                     onChangeText={(text) => this.setState({ password: text })} />
                 <View style={{margin: 7}}/>
-                <Button onPress={(e) => this.userLogin(e)} title="Login"/>
+                <Button onPress={this.handleuserLogin} title="Login"/>
+                <View style={{margin: 7}}/>
+                <Text style={{fontSize: 16, textAlign: 'center'}}>
+                    Not Registered?
+                </Text>
+                <View style={{margin: 7}}/>
+                <Button 
+                    onPress={this.props.signup} title="Signup"
+                    style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}} />
             </ScrollView>
         );
     }

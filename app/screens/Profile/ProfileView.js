@@ -5,12 +5,6 @@ import styles from './styles';
 class ProfileView extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            username: '',
-            email: '',
-            profileType: '',
-        };
     }
 
 
@@ -25,9 +19,8 @@ class ProfileView extends Component {
                 <Button onPress={(e) => this.userSignup(e)} title="SignUp"/>
                 <View style={{margin: 7}}/>
                 <Text style={{fontSize: 16, textAlign: 'center'}}>
-                    ok
+                    profileview
                 </Text>
-
 
             </ScrollView>
         );

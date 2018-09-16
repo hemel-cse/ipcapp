@@ -15,25 +15,17 @@ class SignupView extends Component {
         };
     }
 
-
-    userSignup (e) {
+    handleUserSignup = (e) => {
         this.props.onSignup(this.state.username, this.state.password);
         e.preventDefault();
     }
 
     render() {
 
-        if(!this.state.typeSelect) {
-            return (
-                <View> <Text> ok </Text> </View>
-            );
-        }
-        else {
-
         return (
             <ScrollView style={{padding: 20}}>
                 <Text style={{fontSize: 27, textAlign: 'center'}}>
-                    Signup
+                    SIGNUP
                 </Text>
                 <View style={{margin: 7}}/>
                 <TextInput 
@@ -63,20 +55,21 @@ class SignupView extends Component {
                     value={this.state.email} 
                     onChangeText={(text) => this.setState({ email: text })} />
                 <View style={{margin: 7}}/>
-                <Button onPress={(e) => this.userSignup(e)} title="SignUp"/>
+                <Button onPress={this.handleUserSignup} title="Signup"/>
                 <View style={{margin: 7}}/>
                 <Text style={{fontSize: 16, textAlign: 'center'}}>
                     Aready, signed up?
                 </Text>
                 <View style={{margin: 7}}/>
                 <Button 
-                    onPress={(e) => this.userSignup(e)} title="Login"
-                    style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}}/>
+                    onPress={this.props.login} title="Login"
+                    style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}}
+                    />
 
             </ScrollView>
         );
-        }
     }
 }
+
 
 export default SignupView;
