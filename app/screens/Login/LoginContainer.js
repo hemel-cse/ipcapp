@@ -3,7 +3,7 @@ import LoginView from './LoginView';
 import SignupView from './SignupView';
 import { connect } from 'react-redux';
 
-import { requestLogin } from '../../actions/';
+import { requestLogin, requestSignup } from '../../actions/';
 
 class LoginContainer extends Component {
     constructor(props) {
@@ -44,7 +44,7 @@ class LoginContainer extends Component {
     }
 }
 
-function mapStateToProps(state,props) {
+function mapStateToProps(state) {
     return {
         isLoggedIn: state.loginReducer.isLoggedIn,
     };

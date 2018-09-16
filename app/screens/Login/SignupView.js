@@ -35,7 +35,7 @@ class SignupView extends Component {
                     autoCorrect={false} 
                     autoFocus={true} 
                     keyboardType='default' 
-                    value={this.props.username} 
+                    value={this.state.username} 
                     onChangeText={(text) => this.setState({ username: text })} />
                 <TextInput
                     style={{height: 40, backgroundColor: '#f4f4f4', borderRadius: 5, marginBottom: 7}} 
