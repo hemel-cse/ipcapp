@@ -25,7 +25,7 @@ class SignupView extends Component {
 
         if(!this.state.typeSelect) {
             return (
-                <View> ok </View>
+                <View> <Text> ok </Text> </View>
             );
         }
         else {
