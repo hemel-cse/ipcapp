@@ -11,6 +11,14 @@ export function requestLogin(username, password) {
     };
 }
 
+
+export function requestLogout() {
+    return {
+        type: types.LOGOUT_REQUEST
+    };
+}
+
+
 export function loginFailed() {
     return {
         type: types.LOGIN_FAILED
@@ -37,11 +45,12 @@ export function disableLoader() {
 }
 
 
-export function requestSignup(username, password) {
+export function requestSignup(username, password, email) {
     return {
         type: types.SIGNUP_REQUEST,
         username,
-        password
+        password,
+        email
     };
 }
 

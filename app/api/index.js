@@ -6,11 +6,21 @@ export default function api(path, params, method, token) {
         headers: {
             Accept: 'application/json',
             'Content-Type': 'application/json',
-            ...(token && { token: token })
+            // ...(token && { token: token })
         },
         method: method,
-        ...(params && { body: JSON.stringify(params) })
+        // ...(params && { body: JSON.stringify(params) })
     };
+
+    if (params) {
+        options.body = JSON.stringify(params);
+    }
+
+    if (token) {
+        options.headers.token = token;
+    }
+
+    console.log(options)
 
     return fetch(ApiConstants.BASE_URL + path, options)
         .then(resp => resp.json())

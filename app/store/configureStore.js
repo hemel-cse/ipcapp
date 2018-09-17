@@ -11,7 +11,7 @@ const config = {
     key: 'root',
     storage,
     blacklist: ['nav', 'loadingReducer'],
-    debug: true //to get useful logging
+    debug: true 
 };
 
 const middleware = [];

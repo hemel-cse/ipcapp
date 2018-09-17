@@ -7,6 +7,11 @@ class ProfileView extends Component {
         super(props);
     }
 
+    handleuserLogout = (e) => {
+        this.props.onLogout();
+        e.preventDefault();
+    }
+
 
     render() {
         return (
@@ -19,6 +24,9 @@ class ProfileView extends Component {
                 <Text style={{fontSize: 16, textAlign: 'center'}}>
                     profileview
                 </Text>
+                <Button 
+                    onPress={this.handleuserLogout} title="Logout"
+                    style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}} />
 
             </ScrollView>
         );

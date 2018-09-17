@@ -15,8 +15,9 @@ class SignupView extends Component {
         };
     }
 
+
     handleUserSignup = (e) => {
-        this.props.onSignup(this.state.username, this.state.password);
+        this.props.onSignUp(this.state.username, this.state.password, this.state.email);
         e.preventDefault();
     }
 

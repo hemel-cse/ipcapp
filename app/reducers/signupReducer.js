@@ -5,43 +5,36 @@ import createReducer from 'app/lib/createReducer';
 import * as types from 'app/actions/types';
 
 const initialState = {
-    isLoggedIn: false,
+    isSignedUp: false,
     token: null,
     username: '',
-    password: ''
+    password: '',
+    email: ''
 };
 
-export const loginReducer = createReducer(initialState, {
-    [types.LOGIN_REQUEST](state, action) {
+export const signupReducer = createReducer(initialState, {
+    [types.SIGNUP_REQUEST](state, action) {
         return {
             ...state,
             username: action.username,
-            password: action.password
-        };
-    },
-    [types.LOGOUT_REQUEST](state) {
-        return {
-            ...state,
-            username: '',
-            password: '',
-            isLoggedIn: false,
-            token: null,
+            password: action.password,
+            email: action.email
         };
     },
     [types.LOGIN_LOADING_ENDED](state) {
         return { ...state };
     },
-    [types.LOGIN_RESPONSE](state, action) {
+    [types.SIGNUP_RESPONSE](state, action) {
         return {
             ...state,
-            isLoggedIn: true,
+            isSignedUp: true,
             token: action.response
         };
     },
-    [types.LOGIN_FAILED](state) {
+    [types.SIGNUP_FAILED](state) {
         return {
             ...state,
-            isLoggedIn: false
+            isSignedUp: false
         };
     }
 });
