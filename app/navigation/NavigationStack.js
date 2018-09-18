@@ -5,14 +5,14 @@ import Profile from 'app/screens/Profile';
 
 
 const RNApp = createStackNavigator({
-    Profile: {
-        screen: Profile,
-        navigationOptions: { title: 'Profile', gesturesEnabled: false }
-    },
     Login: {
         screen: Login,
         navigationOptions: { header: null, gesturesEnabled: false }
-    }
+    },
+    Profile: {
+        screen: Profile,
+        navigationOptions: { header: null, gesturesEnabled: false }
+    },
 });
 
 export default RNApp;

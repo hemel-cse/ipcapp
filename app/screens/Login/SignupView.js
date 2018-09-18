@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Text, TextInput, Button } from 'react-native';
+import { ScrollView, View, Text, TextInput, Button, Image } from 'react-native';
 import styles from './styles';
+import images from '../../config/images';
 
 class SignupView extends Component {
     constructor(props) {
@@ -10,6 +11,7 @@ class SignupView extends Component {
             username: '',
             password: '',
             email: '',
+            phone: '',
             profileType: '',
             typeSelect: false,
         };
@@ -17,14 +19,17 @@ class SignupView extends Component {
 
 
     handleUserSignup = (e) => {
-        this.props.onSignUp(this.state.username, this.state.password, this.state.email);
+        this.props.onSignUp(this.state.username, this.state.password, this.state.email, this.state.phone);
         e.preventDefault();
     }
-
+    
     render() {
 
         return (
             <ScrollView style={{padding: 20}}>
+                <View style={{alignItems: 'center', bottom: 5}}> 
+                    <Image source={images.icons.logo} style={{resizeMode: 'contain', height: 200 , width: 200 }} />
+                </View>
                 <Text style={{fontSize: 27, textAlign: 'center'}}>
                     Signup
                 </Text>
@@ -55,6 +60,15 @@ class SignupView extends Component {
                     keyboardType='default' 
                     value={this.state.email} 
                     onChangeText={(text) => this.setState({ email: text })} />
+                <TextInput
+                    style={{height: 40, backgroundColor: '#f4f4f4', borderRadius: 5, marginBottom: 7}}  
+                    placeholder='Phone' 
+                    autoCapitalize='none' 
+                    autoCorrect={false} 
+                    autoFocus={true} 
+                    keyboardType='default' 
+                    value={this.state.phone} 
+                    onChangeText={(text) => this.setState({ phone: text })} />
                 <View style={{margin: 7}}/>
                 <Button onPress={this.handleUserSignup} title="Signup"/>
                 <View style={{margin: 7}}/>

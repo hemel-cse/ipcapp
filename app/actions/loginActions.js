@@ -45,12 +45,13 @@ export function disableLoader() {
 }
 
 
-export function requestSignup(username, password, email) {
+export function requestSignup(username, password, email, phone) {
     return {
         type: types.SIGNUP_REQUEST,
         username,
         password,
-        email
+        email,
+        phone
     };
 }
 

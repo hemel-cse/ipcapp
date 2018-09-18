@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Text, TextInput, Button } from 'react-native';
+import { ScrollView, View, Text, TextInput, Button, Image } from 'react-native';
 import styles from './styles';
+import images from '../../config/images';
 
 class LoginView extends Component {
     constructor(props) {
@@ -22,6 +23,9 @@ class LoginView extends Component {
     render() {
         return (
             <ScrollView style={{padding: 20}}>
+                <View style={{alignItems: 'center', bottom: 5}}> 
+                    <Image source={images.icons.logo} style={{resizeMode: 'contain', height: 200 , width: 200 }} />
+                </View>
                 <Text style={{fontSize: 27, textAlign: 'center'}}>
                     Login
                 </Text>

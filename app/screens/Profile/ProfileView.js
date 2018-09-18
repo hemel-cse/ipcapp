@@ -24,6 +24,10 @@ class ProfileView extends Component {
                 <Text style={{fontSize: 16, textAlign: 'center'}}>
                     profileview
                 </Text>
+                <Text style={{fontSize: 16, textAlign: 'center'}}>
+                    {this.props.userPhone}
+                </Text>
+                <View style={{margin: 7}}/>
                 <Button 
                     onPress={this.handleuserLogout} title="Logout"
                     style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}} />
