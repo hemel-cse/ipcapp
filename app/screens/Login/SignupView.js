@@ -56,7 +56,6 @@ class SignupView extends Component {
                     placeholder='Email' 
                     autoCapitalize='none' 
                     autoCorrect={false} 
-                    autoFocus={true} 
                     keyboardType='default' 
                     value={this.state.email} 
                     onChangeText={(text) => this.setState({ email: text })} />
@@ -65,7 +64,6 @@ class SignupView extends Component {
                     placeholder='Phone' 
                     autoCapitalize='none' 
                     autoCorrect={false} 
-                    autoFocus={true} 
                     keyboardType='default' 
                     value={this.state.phone} 
                     onChangeText={(text) => this.setState({ phone: text })} />

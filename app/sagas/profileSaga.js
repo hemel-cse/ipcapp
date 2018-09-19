@@ -27,6 +27,7 @@ export default function* profileAsync(action) {
         const response = yield call(
             userProfile,
             action.username,
+            action.token,
         );
         console.log(response)
         if (response.id) {

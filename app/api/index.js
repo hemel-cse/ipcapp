@@ -18,7 +18,7 @@ export default function api(path, params, method, token) {
     }
 
     if (token) {
-        options.headers.token = token;
+        options.headers.Authorization = token;
     }
 
     console.log(options)

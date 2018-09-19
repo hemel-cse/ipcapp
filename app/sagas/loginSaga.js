@@ -9,9 +9,7 @@ import { Alert } from 'react-native';
 import loginUser from 'app/api/methods/loginUser';
 import * as loginActions from 'app/actions/loginActions';
 // import * as navigationActions from 'app/navigation';
-
-// import * as navigationService from 'app/navigation/navigationService';
-// import { NavigationActions } from 'react-navigation';
+import * as navigationActions from 'app/actions/navigationActions';
 
 //selector Function used to access reducer states
 export const getNetworkState = state => {
@@ -33,7 +31,7 @@ export default function* loginAsync(action) {
         if (response.token) {
             yield put(loginActions.onLoginResponse(response.token));
             yield put(loginActions.disableLoader({}));
-            // yield put(NavigationActions.navigate({ routeName: 'Profile' }));
+            navigationActions.navigateToHome();
         } else {
             yield put(loginActions.loginFailed());
             yield put(loginActions.disableLoader({}));

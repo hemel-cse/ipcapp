@@ -28,6 +28,7 @@ export const profileReducer = createReducer(initialState, {
         return {
             ...state,
             username: action.username,
+            token: action.token,
         };
     },
     [types.LOGIN_LOADING_ENDED](state) {

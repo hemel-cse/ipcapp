@@ -19,23 +19,11 @@ class LoginContainer extends Component {
             typeSelect: false,
         };
 
-
     }
 
 
     componentDidMount(){
 
-        if (this.props.isLoggedIn) {
-            this.loggedIn();
-        }
-        
-    }
-
-    componentDidUpdate(prevProps) {
-        if(this.props.isLoggedIn){
-            this.loggedIn();
-        }
-        
     }
 
     handleLoginSignup = (e) => {
@@ -43,11 +31,6 @@ class LoginContainer extends Component {
         loginpage: !state.loginpage
       }));
       e.preventDefault();
-    }
-
-
-    loggedIn = () => {
-        this.props.navigation.navigate('Profile')
     }
 
     render() {

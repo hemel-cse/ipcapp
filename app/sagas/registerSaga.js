@@ -26,7 +26,8 @@ export default function* signupAsync(action) {
             registerUser,
             action.username,
             action.password,
-            action.email
+            action.email,
+            action.phone
         );
         console.log(response)
         if (response.auth_token) {

@@ -3,10 +3,11 @@
  */
 import * as types from './types';
 
-export function requestProfile(username) {
+export function requestProfile(username, token) {
     return {
         type: types.PROFILE_REQUEST,
         username,
+        token
     };
 }
 
