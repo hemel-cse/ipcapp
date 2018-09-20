@@ -45,13 +45,22 @@ export function disableLoader() {
 }
 
 
-export function requestSignup(username, password, email, phone) {
+export function requestSignup(username, password, email, phone, address, city, country, name, nid, bio, firstName, lastName, profileType) {
     return {
         type: types.SIGNUP_REQUEST,
-        username,
-        password,
-        email,
-        phone
+        username, 
+        password, 
+        email, 
+        phone, 
+        address, 
+        city, 
+        country, 
+        name, 
+        nid, 
+        bio, 
+        firstName, 
+        lastName, 
+        profileType
     };
 }
 

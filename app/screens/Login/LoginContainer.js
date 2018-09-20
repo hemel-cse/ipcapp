@@ -55,7 +55,9 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         onLogin: (username, password) => { dispatch(requestLogin(username, password)); },
-        onSignUp: (username, password, email, phone) => { dispatch(requestSignup(username, password, email, phone)); }
+        onSignUp: (username, password, email, phone, address, city, country, name, nid, bio, firstName, lastName, profileType) => {
+             dispatch(requestSignup(username, password, email, phone, address, city, country, name, nid, bio, firstName, lastName, profileType)); 
+        }
     };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(LoginContainer);

@@ -27,8 +27,18 @@ export default function* signupAsync(action) {
             action.username,
             action.password,
             action.email,
-            action.phone
+            action.phone, 
+            action.address, 
+            action.city, 
+            action.country, 
+            action.name, 
+            action.nid, 
+            action.bio, 
+            action.firstName, 
+            action.lastName, 
+            action.profileType
         );
+        console.log(action.profileType)
         console.log(response)
         if (response.auth_token) {
             console.log(response)

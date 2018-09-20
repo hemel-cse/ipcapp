@@ -9,7 +9,20 @@ const initialState = {
     token: null,
     username: '',
     password: '',
-    email: ''
+    email: '',
+    firstName: '',
+    lastName: '',
+    name: '',
+    picture: '',
+    bio: '',
+    phone: '',
+    address: '',
+    zipCode: '',
+    city: '',
+    country: '',
+    photoId: '',
+    profileType: '',
+    nid: '',
 };
 
 export const signupReducer = createReducer(initialState, {
@@ -18,7 +31,20 @@ export const signupReducer = createReducer(initialState, {
             ...state,
             username: action.username,
             password: action.password,
-            email: action.email
+            email: action.email,
+            firstName: action.firstName,
+            lastName: action.lastName,
+            name: action.name,
+            picture: action.picture,
+            bio: action.bio,
+            phone: action.phone,
+            address: action.address,
+            zipCode: action.zipCode,
+            city: action.city,
+            country: action.country,
+            photoId: action.photoId,
+            profileType: action.profileType,
+            nid: action.nid,
         };
     },
     [types.LOGIN_LOADING_ENDED](state) {

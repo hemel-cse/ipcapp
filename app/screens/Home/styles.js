@@ -4,6 +4,11 @@ import { StyleSheet } from 'react-native';
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
-    }
+    },
+    headerText: {
+        paddingTop: 10,
+        textAlign: 'center',
+        color: 'grey'
+  },
 });
  export default styles;

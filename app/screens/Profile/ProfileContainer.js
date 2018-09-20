@@ -56,6 +56,15 @@ function mapStateToProps(state, props) {
         tokenLoggedIn: state.loginReducer.token,
         isProfileFetched: state.profileReducer.isProfileFetched,
         userPhone: state.profileReducer.phone,
+        userName: state.profileReducer.username,
+        userFirstName: state.profileReducer.firstName,
+        userLastName: state.profileReducer.lastName,
+        userCity: state.profileReducer.city,
+        userCountry: state.profileReducer.country,
+        userProfileType: state.profileReducer.profileType,
+        userNid: state.profileReducer.nid,
+        userAddress: state.profileReducer.address,
+        userOrgName: state.profileReducer.name,
         loading: state.loadingReducer.isLoginLoading,
 
     };

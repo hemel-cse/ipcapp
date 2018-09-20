@@ -8,18 +8,19 @@ const initialState = {
     isProfileFetched: false,
     id: '',
     username: '',
-    first_name: '',
-    last_name: '',
+    firstName: '',
+    lastName: '',
     name: '',
     picture: '',
     bio: '',
     phone: '',
     address: '',
-    zip_code: '',
+    zipCode: '',
     city: '',
     country: '',
-    photo_id: '',
-    profile_type: '',
+    photoId: '',
+    profileType: '',
+    nid: '',
 
 };
 
@@ -39,7 +40,16 @@ export const profileReducer = createReducer(initialState, {
             ...state,
             isProfileFetched: true,
             phone: action.response.phone,
-            username: action.response.username
+            username: action.response.username,
+            firstName: action.response.first_name,
+            lastName: action.response.last_name,
+            name: action.response.name,
+            nid: action.response.nid,
+            bio: action.response.bio,
+            city: action.response.city,
+            country: action.response.country,
+            profileType: action.response.profile_type,
+            address: action.response.address
         };
     },
     [types.PROFILE_FAILED](state) {
