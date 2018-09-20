@@ -36,3 +36,9 @@ export function disableLoader() {
         type: types.LOGIN_DISABLE_LOADER
     };
 }
+
+export function resetProfile() {
+    return {
+        type: types.PROFILE_RESET,
+    };
+}

@@ -4,7 +4,7 @@ import ProfileView from './ProfileView';
 import { connect } from 'react-redux';
 
 import { requestLogout } from '../../actions/loginActions';
-import { requestProfile } from '../../actions/profileActions';
+import { requestProfile, resetProfile } from '../../actions/profileActions';
 import * as navigationActions from 'app/actions/navigationActions';
 
 class ProfileContainer extends Component {
@@ -72,6 +72,7 @@ function mapStateToProps(state, props) {
 function mapDispatchToProps(dispatch) {
     return {
         onLogout: () => { dispatch(requestLogout()); },
+        // onResetProfile: () => { dispatch(resetProfile()); },
         onProfileFetch: (username, token) => { dispatch(requestProfile(username, token)); },
     };
 }

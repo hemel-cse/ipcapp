@@ -55,7 +55,28 @@ export const profileReducer = createReducer(initialState, {
     [types.PROFILE_FAILED](state) {
         return {
             ...state,
-            isProfileFetched: false
+            isProfileFetched: false,
+        };
+    },
+    [types.PROFILE_RESET](state){
+        return{
+            ...state,
+            isProfileFetched: false,
+            id: '',
+            username: '',
+            firstName: '',
+            lastName: '',
+            name: '',
+            picture: '',
+            bio: '',
+            phone: '',
+            address: '',
+            zipCode: '',
+            city: '',
+            country: '',
+            photoId: '',
+            profileType: '',
+            nid: '',
         };
     }
 });

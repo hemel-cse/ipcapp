@@ -8,6 +8,7 @@ class ProfileView extends Component {
     }
 
     handleuserLogout = (e) => {
+        // this.props.onResetProfile();
         this.props.onLogout();
         e.preventDefault();
     }

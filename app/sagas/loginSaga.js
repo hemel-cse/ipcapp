@@ -8,6 +8,7 @@ import { put, call, select } from 'redux-saga/effects';
 import { Alert } from 'react-native';
 import loginUser from 'app/api/methods/loginUser';
 import * as loginActions from 'app/actions/loginActions';
+import * as profileActions from 'app/actions/profileActions';
 // import * as navigationActions from 'app/navigation';
 import * as navigationActions from 'app/actions/navigationActions';
 
@@ -31,6 +32,7 @@ export default function* loginAsync(action) {
         if (response.token) {
             yield put(loginActions.onLoginResponse(response.token));
             yield put(loginActions.disableLoader({}));
+            yield put(profileActions.resetProfile({}));
             navigationActions.navigateToHome();
         } else {
             yield put(loginActions.loginFailed());
