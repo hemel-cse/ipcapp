@@ -1,4 +1,4 @@
-package com.ipjapp;
+package com.ipcapp;
 
 import android.app.Application;
 
