@@ -26,7 +26,7 @@ class ProfileView extends Component {
                         <KeyboardAvoidingView behavior='position'>
                                 <View style={{margin: 7}}/>
                                 <Text style={{fontSize: 16}}>
-                                    Name: {this.props.name}
+                                    Name: {this.props.userOrgName}
                                 </Text>
                                 <Text style={{fontSize: 16}}>
                                     Phone: {this.props.userPhone}
@@ -43,7 +43,7 @@ class ProfileView extends Component {
                                 <Text style={{fontSize: 16}}>
                                     Profile Type: Marchent
                                 </Text>
-                                <View style={{margin: 7}}/>
+                                <View style={{margin: 20}}/>
                                 <Button 
                                     onPress={this.handleuserLogout} title="Logout"
                                     style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}} />
