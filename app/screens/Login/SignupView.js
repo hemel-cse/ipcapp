@@ -82,6 +82,7 @@ class SignupView extends Component {
                         onPress={this.props.login} title="Login"
                         style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}}
                         />
+                    <View style={{margin: 7}}/>
                 </View>
             );
         }
@@ -189,6 +190,7 @@ class SignupView extends Component {
                             onPress={this.props.login} title="Login"
                             style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}}
                             />
+                        <View style={{margin: 7}}/>
 
                     </ScrollView>
                 );
@@ -279,6 +281,8 @@ class SignupView extends Component {
                             onPress={this.props.login} title="Login"
                             style={{width: '60%', textAlign: 'center', margin: 10, backgroundColor: 'red'}}
                             />
+
+                        <View style={{margin: 7}}/>
 
                     </ScrollView>
                 );
