@@ -1,0 +1,20 @@
+//loaders
+export const LOGIN_ENABLE_LOADER = 'LOGIN_ENABLE_LOADER';
+export const LOGIN_DISABLE_LOADER = 'LOGIN_DISABLE_LOADER';
+
+// login
+export const LOGIN_REQUEST = 'LOGIN_REQUEST';
+export const LOGIN_RESPONSE = 'LOGIN_RESPONSE';
+export const LOGIN_FAILED = 'LOGIN_FAILED';
+export const LOGOUT_REQUEST = 'LOGOUT_REQUEST';
+
+// signup
+export const SIGNUP_REQUEST = 'SIGNUP_REQUEST';
+export const SIGNUP_RESPONSE = 'SIGNUP_RESPONSE';
+export const SIGNUP_FAILED = 'SIGNUP_FAILED';
+
+// profile
+export const PROFILE_REQUEST = 'PROFILE_REQUEST';
+export const PROFILE_RESPONSE = 'PROFILE_RESPONSE';
+export const PROFILE_FAILED = 'PROFILE_FAILED';
+export const PROFILE_RESET = 'PROFILE_RESET';
