@@ -26,10 +26,10 @@ import styles from './styles';
                                     - Category wise consumer information.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    -  Free online advertizements.
+                                    - Free online advertisements.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Free campains on promotional activities.
+                                    - Free campaigns on promotional activities.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
                                     - Free system updating/integration for IPC.
@@ -50,7 +50,7 @@ import styles from './styles';
                                     - Free IPC card and Data consultancy.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Benifits of IPC community fee.
+                                    - Benefits of IPC community fee.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
                                     - Communication through SMS.
@@ -83,25 +83,25 @@ import styles from './styles';
                                     - No money receipt needed.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Discount/previliages in any IPC outlet.
+                                    - Discount/privileges in any IPC outlet.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Neerby IPC outlets discounts feed in app.
+                                    - Nearby IPC outlets discounts feed in app.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Neerby consumer offers notification within your area.
+                                    - Nearby consumer offers notification within your area.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
                                     - No fees or extra charge for consumers.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Automated consumers varification.
+                                    - Automated consumers verification.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
                                     - Full marketplace experience in the app.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Internal communication among the Consumers and Outlets/Marchents.
+                                    - Internal communication among the Consumers and Outlets/Merchants.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
                                     - Social communication features available.
@@ -110,10 +110,10 @@ import styles from './styles';
                                     - Social awareness information provided from the app.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Annually reward on transaction.
+                                    - Annual reward on transaction.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
-                                    - Reward points based on purchase and recognization.
+                                    - Reward points based on purchase and recognition.
                                 </Text>
                                 <Text style={{marginBottom: 2, fontSize: 16}}>
                                     - Free credit cards/Debit cards. (upcoming)
